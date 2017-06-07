@@ -1,6 +1,10 @@
 Meu Candidato
 =============
 
+.. image:: https://readthedocs.org/projects/meucandidato/badge/?version=latest
+   :target: http://facefind.readthedocs.io/pt/latest/?badge=latest
+   :alt: Documentation Status
+
 .. image:: https://travis-ci.org/gilsondev/meucandidato.svg?branch=master
    :target: https://travis-ci.org/gilsondev/meucandidato
    :alt: Travis-CI build status
@@ -9,6 +13,10 @@ Meu Candidato
 .. image:: https://coveralls.io/repos/github/gilsondev/meucandidato/badge.svg?branch=master
    :target: https://coveralls.io/github/gilsondev/meucandidato?branch=master
    :alt: Coverage status
+
+.. image:: https://www.quantifiedcode.com/api/v1/project/d7900427efab4a648b1707032945046e/badge.svg
+  :target: https://www.quantifiedcode.com/app/project/d7900427efab4a648b1707032945046e
+  :alt: Code issues
 
 
 Sistema voltado para centralizar informações do seu candidato, e tornar acessível para qualquer eleitor sobre sua vida, carreira e qualquer
