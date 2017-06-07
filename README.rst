@@ -37,7 +37,9 @@ a outros candidatos e políticos.
 Instalação
 ----------
 
-1. Faça o checkout do projeto::
+1. Faça o checkout do projeto:
+
+.. code-block::
 
    $ git clone https://github.com/gilsondev/meucandidato.git
 
