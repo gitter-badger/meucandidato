@@ -1,0 +1,19 @@
+language: python
+python:
+- '3.6'
+install:
+- pip install -r requirements.txt
+- pip install coveralls
+before_script:
+- cp contrib/env.sample .env
+- sed -i 's/DEBUG=True/DEBUG=False/' .env
+- echo "SECRET_KEY=$SECRET_KEY" >> .env
+script:
+- coverage run --source=meucandidato --omit=manage.py,meucandidato/wsgi.py manage.py
+  test
+after_success: coveralls
+deploy:
+  provider: heroku
+  api_key:
+    secure: OJj25JDlBnMuJTbYbtdkVcU1HD4c98JfG1sd9QLcJ06TSicIIeZsC+F26Ac/PDiM3A5KezNYIHPVrpJsDDNYviI/KFilmMV23lYbO9Eruo1KaW8KPSVmufzX+cd2o62xiwvCRbb3wcQgsTr5xuwwSPGh4w/q4Oo3NbMgZGYHb5JuVHf35F24Plcw9cdhWXNaHJDf9uBrRo0sLQ8TcKyfx5A3dZney7JgN63YRp/kAhxmHfJqpXGxR8+jiEth09ByiosGRsNA9xzHB37TZqKdM6/4muGc90jYx4A8bVPeMf9/q7T07fPlI5BnJ1noYCW9V0K6U93y3g6OF9Z7Eitpb6ftDJxD7jmgQtQTpgSJxYd2qiumA5CR7bZkfWx2Er+SHuShcv3CS2oONyYqIE8JMniKEFi0eNQRJUo8Oz23DfOUjIg0SUsdtjbWshASYnmx55lrlx+S8TpEpIAPOlQ2bn7qmvrE1eN9dlGJHeHZwWWdbX6wmR5iTOHTOgyr8IluFvqUecppvkuzLImPUjvSHAKL1foHbg4mIEMZGRpV3CPiPLoJ9DryFGmLPi2jacIP/yhePQfYjwU18wYlFascwLrAG4qlTDPpSJg/l5xnM8GDdi83Ue7uqBTNBS+ehsM2rS838Vg4nnac2qdYYqfpGEhT7zWpzEKNOQxAYgNmeIo=
+  app: meucandidatoweb
