@@ -1,6 +1,10 @@
 Meu Candidato
 =============
 
+.. image:: https://badges.gitter.im/meucandidato/Lobby.svg
+   :alt: Join the chat at https://gitter.im/meucandidato/Lobby
+   :target: https://gitter.im/meucandidato/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 .. image:: https://readthedocs.org/projects/meucandidato/badge/?version=latest
    :target: http://facefind.readthedocs.io/pt/latest/?badge=latest
    :alt: Documentation Status
