@@ -7,8 +7,7 @@ Meu Candidato
 
 
 .. image:: https://coveralls.io/repos/github/gilsondev/meucandidato/badge.svg?branch=master
-   :target: https://travis-ci.org/gilsondev/meucandidato
-   https://coveralls.io/github/gilsondev/meucandidato?branch=master
+   :target: https://coveralls.io/github/gilsondev/meucandidato?branch=master
    :alt: Coverage status
 
 
@@ -27,10 +26,10 @@ Essa idéia surgiu quando este idealizador (Gilson Filho) procurava informaçõe
 lugares, como também dados do TSE não são tão acessíveis como deveria, pensei em uma forma de criar um aplicação web que possa pesquisar
 pelo nome do candidato do seu interesse, e capturar tudo o que é possível dele em:
 
- - Portais de notícias
- - Dados do TSE como: credenciamento eleitoral, doações de campanha e seus gastos
- - Dados processuais de tribunais do estado do candidato
- - E outras informações acessíveis pela Internet
+- Portais de notícias
+- Dados do TSE como: credenciamento eleitoral, doações de campanha e seus gastos
+- Dados processuais de tribunais do estado do candidato
+- E outras informações acessíveis pela Internet
 
 Dessa forma, teriamos nas nossas mãos uma linha do tempo de tudo que ele fez ou não fez, propôs, os partidos que passou e sua associação
 a outros candidatos e políticos.
@@ -47,15 +46,18 @@ Instalação
    $ cd meucandidato
    $ python3 -m venv .venv
 
+
 3. Ative e instale as dependências::
 
    $ source .venv/bin/activate
    (.venv) $ pip install -r requirements.txt
 
+
 4. Cria o arquivo `.env` baseado no `contrib/env.sample` no diretório de trabalho::
 
    $ cp -Rvf contrib/env.sample .env
 
-4. Execute o servidor local::
+
+5. Execute o servidor local::
 
    $ python manage.py runserver
