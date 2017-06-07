@@ -5,9 +5,8 @@ install:
 - pip install -r requirements.txt
 - pip install coveralls
 before_script:
-- cp contrib/env.sample .env
+- cp -r contrib/env.sample .env
 - sed -i 's/DEBUG=True/DEBUG=False/' .env
-- echo "SECRET_KEY=$SECRET_KEY" >> .env
 script:
 - coverage run --source=meucandidato --omit=manage.py,meucandidato/wsgi.py manage.py
   test
