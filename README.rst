@@ -41,23 +41,28 @@ Instalação
 
    $ git clone https://github.com/gilsondev/meucandidato.git
 
-2. Crie um ambiente virtualizado com virtualenv::
+2. Crie um ambiente virtualizado com virtualenv:
+
+.. code-block::
 
    $ cd meucandidato
    $ python3 -m venv .venv
 
+3. Ative e instale as dependências:
 
-3. Ative e instale as dependências::
+.. code-block::
 
    $ source .venv/bin/activate
    (.venv) $ pip install -r requirements.txt
 
+4. Cria o arquivo `.env` baseado no `contrib/env.sample` no diretório de trabalho:
 
-4. Cria o arquivo `.env` baseado no `contrib/env.sample` no diretório de trabalho::
+.. code-block::
 
    $ cp -Rvf contrib/env.sample .env
 
+5. Execute o servidor local:
 
-5. Execute o servidor local::
+.. code-block::
 
    $ python manage.py runserver
