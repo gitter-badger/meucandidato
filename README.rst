@@ -76,3 +76,11 @@ Instalação
 .. code-block::
 
    $ python manage.py runserver
+
+
+TODO
+----
+
+- Pesquisar notícias do candidato nos grandes portais (G1, R7, Folha, etc)
+- Importar dados eleitorais do TSE (Dados do candidato, relação de bens)
+- Importar dados de doações para candidatos
